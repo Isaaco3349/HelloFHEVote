@@ -16,7 +16,7 @@ Deploy the app on Zama’s testnet for others to try.
 
 This project is aimed at Solidity developers with basic familiarity with smart contracts but little or no background in cryptography.
 
-🔧 Prerequisites
+> Prerequisites
 
 Before starting, make sure you have:
 
@@ -30,7 +30,7 @@ A Metamask wallet (or equivalent).
 
 Basic knowledge of Solidity and React (helpful but not required).
 
-🛠 Environment Setup
+> Environment Setup
 
 Clone the repo:
 
@@ -57,7 +57,7 @@ Compile contracts:
 
 npx hardhat compile
 
-📜 Smart Contract — HelloFHEVote.sol
+> Smart Contract — HelloFHEVote.sol
 
 Here’s a minimal example contract that enables confidential voting:
 
@@ -96,7 +96,7 @@ The contract tallies votes using FHE operations.
 
 Results remain encrypted until decrypted by the front-end.
 
-💻 Front-End Setup
+> Front-End Setup
 
 Inside your repo, create a React app:
 
@@ -128,7 +128,7 @@ async function getResults() {
   setResults({ yes, no });
 }
 
-▶️ Running Locally
+> Running Locally
 
 Start local node:
 
@@ -150,7 +150,7 @@ Open browser at http://localhost:3000.
 
 You can now connect your wallet, cast a vote, and see results update!
 
-🚀 Deployment
+> Deployment
 
 To share your app with others:
 
@@ -162,7 +162,7 @@ Deploy frontend to Vercel or Netlify.
 
 Provide both the GitHub repo link and live demo link in your bounty submission.
 
-🔍 Troubleshooting
+> Troubleshooting
 
 Contract compilation fails: Ensure Solidity version matches pragma ^0.8.20.
 
@@ -172,7 +172,7 @@ Wallet not connecting: Verify you’re on the correct network (Zama testnet).
 
 Decryption mismatch: Ensure frontend uses the same FHE key setup as contract.
 
-📈 Next Steps
+> Next Steps
 
 Once you understand this base project, try extending it:
 
@@ -182,7 +182,7 @@ Build a private auction where bids remain hidden.
 
 Enable private surveys with multiple choice questions.
 
-🎥 Extras
+> Extras
 
 This tutorial includes:
 
